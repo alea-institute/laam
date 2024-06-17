@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "linux-as-a-model"
+version = "0.1.0"
+description = "What is the proper license for this model?"
+authors = ["Michael Bommarito <michael.bommarito@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [
+    { include = "laam", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = {version = "^0.27.0", extras=["http2"]}
+tokenizers = "^0.19.1"
+transformers = "^4.41.2"
+accelerate = "^0.31.0"
+wandb = "^0.17.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

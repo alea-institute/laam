@@ -1,0 +1,16 @@
+# py trash
+**/*.pyc
+**/__pycache__
+**/.pytest_cache
+**/.mypy_cache
+**/.coverage
+**/.vscode
+**/.idea
+**/.tox
+
+# logs
+logs/
+
+# data
+tokenizer/
+models/
